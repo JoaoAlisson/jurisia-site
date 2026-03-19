@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+/* ===================================================
+   JurisIA — Design System v4
+   Light + Dark Mode Premium
+   =================================================== */
+
+/* Dark mode class-based variant for Tailwind v4 */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme inline {
+  --font-sans: var(--font-inter);
+}
+
+/* ── Base ── */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-inter), system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Light */
+body {
+  background: #ffffff;
+  color: #1e293b;
+}
+
+/* Dark */
+.dark body {
+  background: #0A0A0A;
+  color: #e2e8f0;
+}
+
+/* ── Selection ── */
+::selection {
+  background: #0A2540;
+  color: #fff;
+}
+
+.dark ::selection {
+  background: #3b82f6;
+  color: #fff;
+}
+
+/* ── Scrollbar mínima ── */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #cbd5e1 transparent;
+}
+
+.dark * {
+  scrollbar-color: #334155 transparent;
+}
