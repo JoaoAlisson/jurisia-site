@@ -4,6 +4,7 @@ import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import { Quote } from "lucide-react";
 import Image from "next/image";
+import { assetUrl } from "@/lib/basePath";
 
 const testimonials = [
   { quote: "Antes do JurisIA, minha equipe perdia quase 15 horas por semana apenas checando os andamentos no e-SAJ e PJe. Hoje, a IA nos avisa apenas do que importa. O Radar de Oportunidades já nos trouxe dois novos clientes este mês.", name: "Ricardo Mendes", title: "Sócio Fundador", org: "OAB/SP", avatar: "/avatar-1.png" },
@@ -32,7 +33,7 @@ export default function Testimonials() {
               <p className="text-[15px] leading-[1.7] text-slate-600 dark:text-slate-300 flex-1 mb-8">&ldquo;{t.quote}&rdquo;</p>
               <div className="flex items-center gap-3.5 pt-6 border-t border-slate-100 dark:border-white/5">
                 <div className="w-12 h-12 rounded-full overflow-hidden border border-slate-200 dark:border-white/10 shrink-0">
-                  <Image src={t.avatar} alt={t.name} width={48} height={48} className="object-cover w-full h-full" quality={90} />
+                  <Image src={assetUrl(t.avatar)} alt={t.name} width={48} height={48} className="object-cover w-full h-full" quality={90} />
                 </div>
                 <div>
                   <p className="text-[14px] font-semibold text-slate-900 dark:text-white leading-tight">{t.name}</p>

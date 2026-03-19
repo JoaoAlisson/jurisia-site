@@ -4,6 +4,7 @@ import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import Image from "next/image";
 import { FileSearch, Brain, BarChart3, Radar, Zap, Shield } from "lucide-react";
+import { assetUrl } from "@/lib/basePath";
 
 const features = [
   { icon: FileSearch, title: "Análise de Peças Contrárias", description: "IA analisa peças contrárias, identifica argumentos frágeis e sugere contra-argumentações com base em jurisprudência dos tribunais superiores.", tag: "RAG", span: "md:col-span-2", hasMockup: false },
@@ -21,7 +22,7 @@ export default function FeaturesGrid() {
   return (
     <section id="produto" className="py-24 md:py-32 bg-white dark:bg-[#0A0A0A] relative overflow-hidden">
       <div className="absolute inset-0 opacity-[0.35] dark:opacity-[0.15] pointer-events-none">
-        <Image src="/bento-bg.png" alt="" fill className="object-cover" quality={80} />
+        <Image src={assetUrl("/bento-bg.png")} alt="" fill className="object-cover" quality={80} />
       </div>
 
       <div className="relative max-w-[1200px] mx-auto px-5 lg:px-8">
@@ -47,7 +48,7 @@ export default function FeaturesGrid() {
             >
               {feature.hasMockup && (
                 <div className="relative w-full h-[180px] overflow-hidden border-b border-slate-100 dark:border-white/5">
-                  <Image src="/dashboard-jurimetria.png" alt="Dashboard de Jurimetria Preditiva" fill className="object-cover object-top scale-105 group-hover:scale-100 transition-transform duration-700" quality={90} />
+                  <Image src={assetUrl("/dashboard-jurimetria.png")} alt="Dashboard de Jurimetria Preditiva" fill className="object-cover object-top scale-105 group-hover:scale-100 transition-transform duration-700" quality={90} />
                   <div className="absolute inset-0 bg-linear-to-t from-white dark:from-[#141416] via-white/30 dark:via-[#141416]/30 to-transparent" />
                 </div>
               )}

@@ -3,6 +3,7 @@
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import Image from "next/image";
+import { assetUrl } from "@/lib/basePath";
 
 export default function DashboardShowcase() {
   const ref = useRef<HTMLDivElement>(null);
@@ -36,7 +37,7 @@ export default function DashboardShowcase() {
             </div>
 
             <div className="relative aspect-16/10">
-              <Image src="/dashboard-jurimetria.png" alt="Dashboard de Jurimetria Preditiva — JurisIA" fill className="object-cover object-top" quality={95} />
+              <Image src={assetUrl("/dashboard-jurimetria.png")} alt="Dashboard de Jurimetria Preditiva — JurisIA" fill className="object-cover object-top" quality={95} />
             </div>
           </div>
 
