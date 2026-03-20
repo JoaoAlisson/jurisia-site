@@ -16,9 +16,9 @@ export default function Footer() {
       <div className="max-w-[1200px] mx-auto px-5 lg:px-8">
         <div className="py-16 md:py-20 grid grid-cols-2 md:grid-cols-12 gap-10 md:gap-8">
           <div className="col-span-2 md:col-span-4">
-            <div className="flex items-center gap-1 mb-5 select-none">
-              <span className="text-lg font-medium tracking-tight text-slate-900 dark:text-white opacity-80">Juris</span>
-              <span className="text-[9px] font-bold tracking-wide text-white bg-blue-600 dark:bg-blue-500 px-1.5 py-0.5 rounded self-center leading-none opacity-80">IA</span>
+            <div className="flex items-center gap-1.5 mb-5 select-none">
+              <span className="text-xl font-normal tracking-tight text-slate-900 dark:text-white opacity-80" style={{ fontFamily: 'var(--font-serif), serif' }}>Juris</span>
+              <span className="text-[9px] font-bold tracking-wider text-white bg-blue-600 dark:bg-blue-500 px-1.5 py-1 rounded-md self-center leading-none opacity-80">IA</span>
             </div>
             <p className="text-[13px] leading-relaxed text-slate-500 dark:text-slate-400 max-w-[300px] mb-6">
               Gestão processual, IA generativa e jurimetria preditiva em uma plataforma feita para a advocacia brasileira.
