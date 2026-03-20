@@ -1,2 +1,2 @@
-:HL["/jurisia-site/_next/static/chunks/17f78hjpv8qv3.css","style"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"/_not-found","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"JHqNWZa8xrJBegXY80__5"}
+:HL["/jurisia-site/_next/static/chunks/0eh9s4v4bcddt.css","style"]
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"/_not-found","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"AsAO7J7o9h6q7g-R1N6Tr"}
