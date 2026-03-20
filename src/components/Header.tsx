@@ -35,10 +35,9 @@ export default function Header() {
       >
         <div className="max-w-[1200px] mx-auto px-5 lg:px-8">
           <div className="flex items-center justify-between h-14">
-            {/* Logo — tipográfico puro */}
-            <a href="#" className="flex items-center gap-1.5 select-none">
-              <span className="text-[24px] font-normal tracking-tight text-slate-900 dark:text-white" style={{ fontFamily: 'var(--font-serif), serif' }}>Juris</span>
-              <span className="text-[11px] font-bold tracking-wider text-white bg-blue-600 dark:bg-blue-500 px-2 py-1.5 rounded-md self-center leading-none">IA</span>
+            {/* Logo */}
+            <a href="#" className="select-none">
+              <span className="text-[20px] font-semibold tracking-tight text-slate-900 dark:text-white">juris</span><span className="text-[20px] font-semibold tracking-tight text-blue-600 dark:text-blue-400">ia</span>
             </a>
 
             {/* Nav */}
