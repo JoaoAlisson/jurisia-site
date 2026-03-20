@@ -27,7 +27,7 @@ export default function PricingCards() {
             const hi = plan.highlighted;
             return (
               <motion.div key={plan.name} initial={{ opacity: 0, y: 20 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.5, delay: 0.15 + i * 0.08 }}
-                className={`rounded-2xl p-7 md:p-8 flex flex-col transition-colors ${hi ? "bg-[#0A2540] dark:bg-blue-600 text-white" : "bg-white dark:bg-[#141416] border border-slate-200 dark:border-white/10 hover:border-slate-300 dark:hover:border-white/20"}`}>
+                className={`rounded-2xl p-7 md:p-8 flex flex-col transition-all duration-300 ${hi ? "bg-[#0A2540] dark:bg-blue-600 text-white shadow-[0_8px_32px_rgba(10,37,64,0.25),0_2px_8px_rgba(10,37,64,0.15)] dark:shadow-[0_8px_32px_rgba(37,99,235,0.3),0_2px_8px_rgba(37,99,235,0.2)]" : "bg-white/60 dark:bg-[#141416]/60 backdrop-blur-xl border border-slate-200/70 dark:border-white/[0.08] hover:border-slate-300/80 dark:hover:border-white/15 shadow-[0_1px_2px_rgba(0,0,0,0.04)] hover:shadow-[0_4px_16px_rgba(0,0,0,0.06),0_1px_3px_rgba(0,0,0,0.04)] dark:shadow-[0_1px_2px_rgba(0,0,0,0.3)] dark:hover:shadow-[0_4px_16px_rgba(0,0,0,0.4)]"}`}>
                 <div className="mb-7">
                   <div className="flex items-center gap-3 mb-3">
                     <h3 className={`text-[15px] font-semibold ${hi ? "text-white" : "text-slate-900 dark:text-white"}`}>{plan.name}</h3>

@@ -8,6 +8,10 @@
 /* Dark mode class-based variant for Tailwind v4 */
 @custom-variant dark (&:where(.dark, .dark *));
 
+/* Logo IA color */
+:root { --logo-ia-color: #0A2540; }
+.dark { --logo-ia-color: #60A5FA; }
+
 @theme inline {
   --font-sans: var(--font-inter);
 }
