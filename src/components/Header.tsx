@@ -3,7 +3,9 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, ArrowUpRight } from "lucide-react";
+import Image from "next/image";
 import ThemeToggle from "./ThemeToggle";
+import { assetUrl } from "@/lib/basePath";
 
 const navLinks = [
   { label: "Produto", href: "#produto" },
@@ -36,8 +38,15 @@ export default function Header() {
         <div className="max-w-[1200px] mx-auto px-5 lg:px-8">
           <div className="flex items-center justify-between h-14">
             {/* Logo */}
-            <a href="#" className="flex items-center gap-2">
-              <span className="text-xl font-bold tracking-tighter text-slate-900 dark:text-white">
+            <a href="#" className="flex items-center gap-2.5">
+              <Image
+                src={assetUrl("/logomark.png")}
+                alt="Juris IA"
+                width={28}
+                height={28}
+                className="w-7 h-7 rounded-md"
+              />
+              <span className="text-xl font-black tracking-tighter text-slate-900 dark:text-white">
                 Juris <span className="text-blue-900 dark:text-blue-400">IA</span>
               </span>
             </a>

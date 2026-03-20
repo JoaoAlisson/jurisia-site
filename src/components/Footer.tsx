@@ -1,6 +1,8 @@
 "use client";
 
 import { ArrowUpRight } from "lucide-react";
+import Image from "next/image";
+import { assetUrl } from "@/lib/basePath";
 
 const linkGroups = [
   { title: "Produto", links: ["Recursos", "Preços", "Documentação", "Changelog"] },
@@ -16,9 +18,18 @@ export default function Footer() {
       <div className="max-w-[1200px] mx-auto px-5 lg:px-8">
         <div className="py-16 md:py-20 grid grid-cols-2 md:grid-cols-12 gap-10 md:gap-8">
           <div className="col-span-2 md:col-span-4">
-            <span className="text-lg font-bold tracking-tighter text-slate-900 dark:text-white opacity-80 mb-5 inline-block">
-              Juris <span className="text-blue-900 dark:text-blue-400">IA</span>
-            </span>
+            <div className="flex items-center gap-2.5 mb-5">
+              <Image
+                src={assetUrl("/logomark.png")}
+                alt="Juris IA"
+                width={24}
+                height={24}
+                className="w-6 h-6 rounded-sm opacity-80"
+              />
+              <span className="text-lg font-black tracking-tighter text-slate-900 dark:text-white opacity-80">
+                Juris <span className="text-blue-900 dark:text-blue-400">IA</span>
+              </span>
+            </div>
             <p className="text-[13px] leading-relaxed text-slate-500 dark:text-slate-400 max-w-[300px] mb-6">
               Gestão processual, IA generativa e jurimetria preditiva em uma plataforma feita para a advocacia brasileira.
             </p>
