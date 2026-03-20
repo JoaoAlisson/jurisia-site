@@ -1,6 +1,7 @@
 "use client";
 
 import { ArrowUpRight } from "lucide-react";
+import Logo from "./Logo";
 
 const linkGroups = [
   { title: "Produto", links: ["Recursos", "Preços", "Documentação", "Changelog"] },
@@ -16,8 +17,8 @@ export default function Footer() {
       <div className="max-w-[1200px] mx-auto px-5 lg:px-8">
         <div className="py-16 md:py-20 grid grid-cols-2 md:grid-cols-12 gap-10 md:gap-8">
           <div className="col-span-2 md:col-span-4">
-            <div className="mb-5 select-none">
-              <span className="text-lg font-semibold tracking-tight text-slate-900 dark:text-white opacity-80">juris</span><span className="text-lg font-semibold tracking-tight text-blue-600 dark:text-blue-400 opacity-80">ia</span>
+            <div className="mb-5">
+              <Logo size="sm" className="text-slate-900 dark:text-white opacity-80" />
             </div>
             <p className="text-[13px] leading-relaxed text-slate-500 dark:text-slate-400 max-w-[300px] mb-6">
               Gestão processual, IA generativa e jurimetria preditiva em uma plataforma feita para a advocacia brasileira.

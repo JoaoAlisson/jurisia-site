@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, ArrowUpRight } from "lucide-react";
 import ThemeToggle from "./ThemeToggle";
+import Logo from "./Logo";
 
 const navLinks = [
   { label: "Produto", href: "#produto" },
@@ -37,7 +38,7 @@ export default function Header() {
           <div className="flex items-center justify-between h-14">
             {/* Logo */}
             <a href="#" className="select-none">
-              <span className="text-[20px] font-semibold tracking-tight text-slate-900 dark:text-white">juris</span><span className="text-[20px] font-semibold tracking-tight text-blue-600 dark:text-blue-400">ia</span>
+              <Logo size="md" className="text-slate-900 dark:text-white" />
             </a>
 
             {/* Nav */}
