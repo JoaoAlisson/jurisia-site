@@ -36,9 +36,9 @@ export default function Header() {
         <div className="max-w-[1200px] mx-auto px-5 lg:px-8">
           <div className="flex items-center justify-between h-14">
             {/* Logo — tipográfico puro */}
-            <a href="#" className="flex items-center gap-0.5 select-none">
-              <span className="text-[22px] font-black tracking-tighter text-slate-900 dark:text-white">Juris</span>
-              <span className="text-[11px] font-bold tracking-wide text-white bg-[#0A2540] dark:bg-blue-500 px-1.5 py-0.5 rounded ml-1 leading-none">IA</span>
+            <a href="#" className="flex items-center gap-1 select-none">
+              <span className="text-[22px] font-medium tracking-tight text-slate-900 dark:text-white">Juris</span>
+              <span className="text-[10px] font-bold tracking-wide text-white bg-blue-600 dark:bg-blue-500 px-1.5 py-1 rounded self-center leading-none">IA</span>
             </a>
 
             {/* Nav */}
