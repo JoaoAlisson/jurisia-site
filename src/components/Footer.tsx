@@ -23,8 +23,8 @@ export default function Footer() {
             <p className="text-[13px] leading-relaxed text-slate-500 dark:text-slate-400 max-w-[300px] mb-6">
               Gestão processual, IA generativa e jurimetria preditiva em uma plataforma feita para a advocacia brasileira.
             </p>
-            <a href="mailto:contato@jurisia.com" className="group inline-flex items-center gap-1.5 text-[13px] text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors">
-              contato@jurisia.com
+            <a href="mailto:contato@jurisgpt.com" className="group inline-flex items-center gap-1.5 text-[13px] text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors">
+              contato@jurisgpt.com
               <ArrowUpRight className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" strokeWidth={2} />
             </a>
           </div>
@@ -44,7 +44,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-slate-100 dark:border-white/5 py-5 flex flex-col md:flex-row items-start md:items-center justify-between gap-2">
-          <p className="text-[12px] text-slate-400 dark:text-slate-500">© {year} JurisIA</p>
+          <p className="text-[12px] text-slate-400 dark:text-slate-500">© {year} JurisGPT</p>
           <p className="text-[12px] text-slate-400 dark:text-slate-500">São Paulo, SP — Brasil</p>
         </div>
       </div>

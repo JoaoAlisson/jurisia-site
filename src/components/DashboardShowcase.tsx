@@ -32,12 +32,12 @@ export default function DashboardShowcase() {
               <div className="w-2.5 h-2.5 rounded-full bg-slate-200 dark:bg-white/10" />
               <div className="w-2.5 h-2.5 rounded-full bg-slate-200 dark:bg-white/10" />
               <div className="flex-1 mx-3 h-5 rounded-md bg-white dark:bg-white/5 border border-slate-100 dark:border-white/10 flex items-center justify-center">
-                <span className="text-[10px] text-slate-400 dark:text-slate-500">app.jurisia.com/jurimetria</span>
+                <span className="text-[10px] text-slate-400 dark:text-slate-500">app.jurisgpt.com/jurimetria</span>
               </div>
             </div>
 
             <div className="relative aspect-16/10">
-              <Image src={assetUrl("/dashboard-jurimetria.png")} alt="Dashboard de Jurimetria Preditiva — JurisIA" fill className="object-cover object-top" quality={95} />
+              <Image src={assetUrl("/dashboard-jurimetria.png")} alt="Dashboard de Jurimetria Preditiva — JurisGPT" fill className="object-cover object-top" quality={95} />
             </div>
           </div>
 

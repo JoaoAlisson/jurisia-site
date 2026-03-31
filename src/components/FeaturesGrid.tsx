@@ -44,7 +44,7 @@ export default function FeaturesGrid() {
               initial={{ opacity: 0, y: 20 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: 0.1 + i * 0.07 }}
-              className={`bg-white/60 dark:bg-[#141416]/60 backdrop-blur-xl border border-slate-200/70 dark:border-white/[0.08] rounded-2xl overflow-hidden group hover:border-slate-300/80 dark:hover:border-white/15 transition-all duration-300 shadow-[0_1px_2px_rgba(0,0,0,0.04)] hover:shadow-[0_4px_16px_rgba(0,0,0,0.06),0_1px_3px_rgba(0,0,0,0.04)] dark:shadow-[0_1px_2px_rgba(0,0,0,0.3)] dark:hover:shadow-[0_4px_16px_rgba(0,0,0,0.4),0_1px_3px_rgba(0,0,0,0.3)] ${feature.span}`}
+              className={`bg-white/60 dark:bg-[#141416]/60 backdrop-blur-xl border border-slate-200/70 dark:border-white/8 rounded-2xl overflow-hidden group hover:border-slate-300/80 dark:hover:border-white/15 transition-all duration-300 shadow-[0_1px_2px_rgba(0,0,0,0.04)] hover:shadow-[0_4px_16px_rgba(0,0,0,0.06),0_1px_3px_rgba(0,0,0,0.04)] dark:shadow-[0_1px_2px_rgba(0,0,0,0.3)] dark:hover:shadow-[0_4px_16px_rgba(0,0,0,0.4),0_1px_3px_rgba(0,0,0,0.3)] ${feature.span}`}
             >
               {feature.hasMockup && (
                 <div className="relative w-full h-[180px] overflow-hidden border-b border-slate-100 dark:border-white/5">

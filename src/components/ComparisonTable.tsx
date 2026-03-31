@@ -112,7 +112,7 @@ export default function ComparisonTable() {
               </div>
 
               {cat.features.map((feature, fi) => (
-                <div key={feature.name} className={`grid grid-cols-[1fr_100px_100px_100px] md:grid-cols-[1fr_140px_140px_140px] border-b border-slate-100 dark:border-white/5 hover:bg-slate-50/50 dark:hover:bg-white/[0.02] transition-colors ${ci === categories.length - 1 && fi === cat.features.length - 1 ? "border-b-0" : ""}`}>
+                <div key={feature.name} className={`grid grid-cols-[1fr_100px_100px_100px] md:grid-cols-[1fr_140px_140px_140px] border-b border-slate-100 dark:border-white/5 hover:bg-slate-50/50 dark:hover:bg-white/2 transition-colors ${ci === categories.length - 1 && fi === cat.features.length - 1 ? "border-b-0" : ""}`}>
                   <div className="px-5 md:px-6 py-3.5 flex items-center">
                     <span className="text-[13px] text-slate-600 dark:text-slate-300">{feature.name}</span>
                   </div>

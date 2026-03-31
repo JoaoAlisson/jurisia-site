@@ -16,7 +16,7 @@ const dmSerif = DM_Serif_Display({
 });
 
 export const metadata: Metadata = {
-  title: "JurisIA — IA para Advocacia",
+  title: "JurisGPT — IA para Advocacia",
   description:
     "Gestão processual, IA generativa e jurimetria preditiva. Economize +25h por semana.",
 };

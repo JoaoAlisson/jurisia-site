@@ -2,7 +2,7 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   output: "export",
-  basePath: "/jurisia-site",
+  basePath: "/jurisgpt-site",
   images: {
     unoptimized: true,
   },
